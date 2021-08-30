@@ -52,11 +52,11 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
 |                  |**`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
-              msg.edit(`**
+              msg.edit(`**``
     ___SLOTS___  
 |${slots[result1]}${slots[result2]}${slots[result3]}${message.author.username}💵 ${kazandin}+
 |                  |
-|                  |**`,true);
+|                  |**```,true);
             }, 3500);
           });
 
@@ -70,11 +70,11 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
 |                  |`;
           message.channel.send(text3).then(msg => {
             setTimeout(() => {
-              msg.edit(`**
+              msg.edit(`**"``
     ___SLOTS___  
 |${slots[result1]}${slots[result2]}${slots[result3]}|${message.author.username}💵 ${miktar}-
 |                  |
-|                  |**`, true);
+|                  |**``"`, true);
             }, 3500);
           });
   db.add(`para_${message.author.id}`, -miktar)

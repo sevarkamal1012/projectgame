@@ -17,8 +17,8 @@ exports.run = async (client, message, args) => {
 //total: ${toplam.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ')}
   let balanceEmbed = new Discord.MessageEmbed()
     .setAuthor(user.tag, user.avatarURL({dynamic: true}))
-    .setImage("https://media.discordapp.net/attachments/869689813996023899/881984185559027792/money-app-loading-dribbble.gif")
-    .setDescription(`**__Zooba Cash \💰__**\n**💵 | Balance : ${para.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1,')}\n➖➖➖➖➖➖➖➖\n🎯 | Bank Name:- ${message.author.username}\n➖➖➖➖➖➖➖➖\n🏧 | Bank: ${banka.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1,')}**`)
+    .setImage("https://media.discordapp.net/attachments/869689813996023899/881986613226377286/20210830_223944.gif")
+    .setDescription(`**💵 | Balance : ${para.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1,')}\n➖➖➖➖➖➖➖➖\n🎯 | Bank Name:- ${message.author.username}\n➖➖➖➖➖➖➖➖\n🏧 | Bank: ${banka.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1,')}**`)
     .setColor("BLACK")
     .setThumbnail('https://i.pinimg.com/originals/a6/ff/a5/a6ffa54c9b06f7030aecd93f011dcb60.gif')
     .setFooter('💰 Balance Info!');
