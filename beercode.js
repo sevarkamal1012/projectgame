@@ -5,10 +5,13 @@ const http = require('http');
 const db = require('quick.db');
 const moment = require('moment')
 const express = require('express');
+const zalgo = require("zalgolize");
 const ayarlar = require('./ayarlar.json');
 const Discord = require('discord.js');
 const client = new Discord.Client();
 client.login(process.env.TOKEN)
+client.commands = new Collection();
+client.aliases = new Collection();
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 const prefix = "Z";
 //=======================================//
@@ -842,6 +845,414 @@ client.on("message", emprator => {
 if (emprator.content === "Zcow") {
 emprator.channel.send(`<@782911020527517727>Peroza 500,000`); }});
 //===============================================================================\\
+const yt = require("ytdl-core");
+
+function commandIs(str, msg) {
+  return msg.content.toLowerCase().startsWith("*" + str);
+}
+
+function pluck(array) {
+  return array.map(function(item) {
+    return item["name"];
+  });
+}
+
+function hasRole(mem, role) {
+  if (pluck(mem.roles).includes(role)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+//================================//
+var servers = {};
+
+var q1 = `v1`;
+
+var q2 = `v2`;
+
+var q3 = `v3`;
+
+var q4 = `v4`;
+
+var q5 = `v5`;
+
+var q6 = `v6`;
+
+var q7 = `v7`;
+
+var q8 = `v8`;
+
+var q9 = `v9`;
+
+var q10 = `v10`;
+
+var q11 = `v11`;
+
+var q12 = `v12`;
+
+var q13 = `v13`;
+
+var q14 = `v14`;
+
+var q15 = `v15`;
+
+var q16 = `v16`;
+
+var q17 = `v17`;
+
+var q18 = `v18`;
+
+var q19 = `v19`;
+
+var q20 = `v20`;
+
+
+function play(connection, message) {
+  var server = servers[message.guild.id];
+
+  server.dispatcher = connection.playStream(
+    yt(server.queue[0], { fliter: "audionly" })
+  );
+
+  server.queue.shift();
+
+  server.dispatcher.on("end", function() {
+    if (server.queue[0]) play(connection, message);
+    else connection.disconnect();
+  });
+}
+
+client.on("ready", () => {
+  console.log(`Quran bot is in ${client.guilds.size} servers `);
+});
+//================================//
+client.on("message", message => {
+  if (message.content === q1) {
+    message.react("🔊");
+    message.reply(`**You started this voice 1**`);
+    const voiceChannel = message.member.voice.channel;
+    if (!voiceChannel) {
+      return message.reply(`**you must joining a voice**`);
+    }
+    voiceChannel.join().then(connnection => {
+      let stream = yt("https://youtu.be/2GFZ5ZKuvYg", { audioonly: true });
+      const dispatcher = connnection.play(stream);
+    });
+  }
+ if (message.content === q2) {
+    message.react("🔊");
+    message.reply("**You started this voice 2**");
+
+    const voiceChannel = message.member.voice.channel;
+    if (!voiceChannel) {
+      return message.reply(`**you must joining a voice**`);
+    }
+    voiceChannel.join().then(connnection => {
+      let stream = yt("https://youtube.com/shorts/CgapdrcjANg?feature=share", {
+        audioonly: true
+      });
+      const dispatcher = connnection.play(stream);
+    });
+  }
+if (message.content === q3) {
+    message.react("🔊");
+    message.reply("**You started this voice 3**");
+
+    const voiceChannel = message.member.voice.channel;
+    if (!voiceChannel) {
+      return message.reply(`**you must joining a voice**`);
+    }
+    voiceChannel.join().then(connnection => {
+      let stream = yt("https://youtube.com/shorts/W_KdDztRAcE?feature=share", {
+        audioonly: true
+      });
+      const dispatcher = connnection.play(stream);
+    });
+  }
+if (message.content === q4) {
+    message.react("🔊");
+    message.reply("**You started this voice 4**");
+
+    const voiceChannel = message.member.voice.channel;
+    if (!voiceChannel) {
+      return message.reply(`**you must joining a voice**`);
+    }
+    voiceChannel.join().then(connnection => {
+      let stream = yt("https://youtu.be/wVqO40KNtkU", {
+        audioonly: true
+      });
+      const dispatcher = connnection.play(stream);
+    });
+  }
+  if (message.content === q5) {
+    message.react("🔊");
+    message.reply("**You started this voice 5**");
+
+    const voiceChannel = message.member.voice.channel;
+    if (!voiceChannel) {
+      return message.reply(`**you must joining a voice**`);
+    }
+    voiceChannel.join().then(connnection => {
+      let stream = yt("https://youtu.be/dbuMKzHohZs", {
+        audioonly: true
+      });
+      const dispatcher = connnection.play(stream);
+    });
+  }
+  if (message.content === q6) {
+    message.react("🔊");
+    message.reply("**You started this voice 6**");
+
+    const voiceChannel = message.member.voice.channel;
+    if (!voiceChannel) {
+      return message.reply(`**you must joining a voice**`);
+    }
+    voiceChannel.join().then(connnection => {
+      let stream = yt("https://youtube.com/shorts/dRJJgkcaWAY?feature=share", {
+        audioonly: true
+      });
+      const dispatcher = connnection.play(stream);
+    });
+  }
+  if (message.content === q7) {
+    message.react("🔊");
+    message.reply("**You started this voice 7**");
+
+    const voiceChannel = message.member.voice.channel;
+    if (!voiceChannel) {
+      return message.reply(`**you must joining a voice**`);
+    }
+    voiceChannel.join().then(connnection => {
+      let stream = yt("https://youtube.com/shorts/pNuiABekk8s?feature=share", {
+        audioonly: true
+      });
+      const dispatcher = connnection.play(stream);
+    });
+  }
+  if (message.content === q8) {
+    message.react("🔊");
+    message.reply("**You started this voice 8**");
+
+    const voiceChannel = message.member.voice.channel;
+    if (!voiceChannel) {
+      return message.reply(`**you must joining a voice**`);
+    }
+    voiceChannel.join().then(connnection => {
+      let stream = yt("https://youtu.be/ptf5kM3DPA8", {
+        audioonly: true
+      });
+      const dispatcher = connnection.play(stream);
+    });
+  }
+  if (message.content === q9) {
+    message.react("🔊");
+    message.reply("**You started this voice 9**");
+
+    const voiceChannel = message.member.voice.channel;
+    if (!voiceChannel) {
+      return message.reply(`**you must joining a voice**`);
+    }
+    voiceChannel.join().then(connnection => {
+      let stream = yt("https://youtube.com/shorts/c2G36Ufgbjs?feature=share", {
+        audioonly: true
+      });
+      const dispatcher = connnection.play(stream);
+    });
+  }
+    if (message.content === q10) {
+    message.react("🔊");
+    message.reply("**You started this voice 10**");
+
+    const voiceChannel = message.member.voice.channel;
+    if (!voiceChannel) {
+      return message.reply(`**you must joining a voice**`);
+    }
+    voiceChannel.join().then(connnection => {
+      let stream = yt("https://youtube.com/shorts/ZkCUsIjrdZ8?feature=share", {
+        audioonly: true
+      });
+      const dispatcher = connnection.play(stream);
+    });
+  }
+  if (message.content === q11) {
+    message.react("🔊");
+    message.reply("**You started this voice 11**");
+
+    const voiceChannel = message.member.voice.channel;
+    if (!voiceChannel) {
+      return message.reply(`**you must joining a voice**`);
+    }
+    voiceChannel.join().then(connnection => {
+      let stream = yt("https://youtube.com/shorts/lg14Sftia_U?feature=share", {
+        audioonly: true
+      });
+      const dispatcher = connnection.play(stream);
+    });
+  }
+    if (message.content === q12) {
+    message.react("🔊");
+    message.reply("**You started this voice 12**");
+
+    const voiceChannel = message.member.voice.channel;
+    if (!voiceChannel) {
+      return message.reply(`**you must joining a voice**`);
+    }
+    voiceChannel.join().then(connnection => {
+      let stream = yt("https://youtube.com/shorts/oSL6CjhAoec?feature=share", {
+        audioonly: true
+      });
+      const dispatcher = connnection.play(stream);
+    });
+  }
+    if (message.content === q13) {
+    message.react("🔊");
+    message.reply("**You started this voice 13**");
+
+    const voiceChannel = message.member.voice.channel;
+    if (!voiceChannel) {
+      return message.reply(`**you must joining a voice**`);
+    }
+    voiceChannel.join().then(connnection => {
+      let stream = yt("https://youtube.com/shorts/JG-0_dBRJfQ?feature=share", {
+        audioonly: true
+      });
+      const dispatcher = connnection.play(stream);
+    });
+  }
+    if (message.content === q14) {
+    message.react("🔊");
+    message.reply("**You started this voice 14**");
+
+    const voiceChannel = message.member.voice.channel;
+    if (!voiceChannel) {
+      return message.reply(`**you must joining a voice**`);
+    }
+    voiceChannel.join().then(connnection => {
+      let stream = yt("https://youtube.com/shorts/yOVxAhcXgiI?feature=share", {
+        audioonly: true
+      });
+      const dispatcher = connnection.play(stream);
+    });
+  }
+    if (message.content === q15) {
+    message.react("🔊");
+    message.reply("**You started this voice 15**");
+
+    const voiceChannel = message.member.voice.channel;
+    if (!voiceChannel) {
+      return message.reply(`**you must joining a voice**`);
+    }
+    voiceChannel.join().then(connnection => {
+      let stream = yt("https://youtu.be/WkVj8H-GFsM", {
+        audioonly: true
+      });
+      const dispatcher = connnection.play(stream);
+    });
+  }
+    if (message.content === q16) {
+    message.react("🔊");
+    message.reply("**You started this voice 16**");
+
+    const voiceChannel = message.member.voice.channel;
+    if (!voiceChannel) {
+      return message.reply(`**you must joining a voice**`);
+    }
+    voiceChannel.join().then(connnection => {
+      let stream = yt("https://youtube.com/shorts/vw7vCWCAuSY?feature=share", {
+        audioonly: true
+      });
+      const dispatcher = connnection.play(stream);
+    });
+  }
+    if (message.content === q17) {
+    message.react("🔊");
+    message.reply("**You started this voice 17**");
+
+    const voiceChannel = message.member.voice.channel;
+    if (!voiceChannel) {
+      return message.reply(`**you must joining a voice**`);
+    }
+    voiceChannel.join().then(connnection => {
+      let stream = yt("https://youtu.be/avFedPkfle8", {
+        audioonly: true
+      });
+      const dispatcher = connnection.play(stream);
+    });
+  }
+    if (message.content === q18) {
+    message.react("🔊");
+    message.reply("**You started this voice 18**");
+
+    const voiceChannel = message.member.voice.channel;
+    if (!voiceChannel) {
+      return message.reply(`**you must joining a voice**`);
+    }
+    voiceChannel.join().then(connnection => {
+      let stream = yt("https://youtu.be/d1sCtPPjyyw", {
+        audioonly: true
+      });
+      const dispatcher = connnection.play(stream);
+    });
+  }
+    if (message.content === q19) {
+    message.react("🔊");
+    message.reply("**You started this voice 19**");
+
+    const voiceChannel = message.member.voice.channel;
+    if (!voiceChannel) {
+      return message.reply(`**you must joining a voice**`);
+    }
+    voiceChannel.join().then(connnection => {
+      let stream = yt("https://youtu.be/cwMhyhWy41k", {
+        audioonly: true
+      });
+      const dispatcher = connnection.play(stream);
+    });
+  }
+    if (message.content === q20) {
+    message.react("🔊");
+    message.reply("**You started this voice 20**");
+
+    const voiceChannel = message.member.voice.channel;
+    if (!voiceChannel) {
+      return message.reply(`**you must joining a voice**`);
+    }
+    voiceChannel.join().then(connnection => {
+      let stream = yt("https://youtu.be/wVzo6Q0YRFA", {
+        audioonly: true
+      });
+      const dispatcher = connnection.play(stream);
+    });
+  }
+  //===============================================//
+  if (message.content === `${prefix}stop`) {
+  
+    if (message.guild.voiceConnection)
+      message.guild.voiceConnection.disconnect();
+  }
+
+  if (message.content === "server2quran") {
+    message.channel.send(`QuranBot Stop`);
+  }
+});
+//=============================================//
+client.on("ready", () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+client.on("ready", async () => {
+  console.log("Starting..");
+  let g = client.guilds.cache.get("");
+  let c = g.channels.cache.get("");
+  if (c.type === "voice") {
+    c.join();
+    setInterval(() => {
+      if (!g.me.voice.channel) c.join();
+    }, 1);
+  } else {
+    console.log('Failed To Join: \n The Channel Type isn "Listeni_g."');
+  }
+});
 //===============================================================================\\
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
