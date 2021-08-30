@@ -10,7 +10,7 @@ module.exports.run = async (client, message, args) => {
 .setColor("RED")
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
 .setDescription(`⛔ You must enter the amount of money to be deposited in the bank!
-\`!deposit <amount || all>\``))
+\`Zbank <amount || all>\``))
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 //-----------------------------------------------------------------------------------------------------\\
  if(miktar === 'all' || miktar === 'all') {
@@ -38,7 +38,7 @@ message.channel.send(new Discord.MessageEmbed()
    if (miktar > param) return message.channel.send(new Discord.MessageEmbed()
 .setColor("RED")
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-.setDescription(`⛔ To deposit in the bank only ${param} 💸 there is`))
+.setDescription(`⛔ To bank in the bank only ${param} 💸 there is`))
   //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 //-----------------------------------------------------------------------------------------------------\\
 if(args[0] === 'all' || args[0] === 'all') {

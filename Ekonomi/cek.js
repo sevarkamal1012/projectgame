@@ -11,9 +11,9 @@ module.exports.run = async (client, message, args) => {
     if(!miktar) return message.channel.send(new Discord.MessageEmbed()
 .setColor("RED")
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-.setDescription(`⛔ Bankadan çekmek istediğin para miktarını girmelisin!
+.setDescription(`⛔ You have to enter the amount of money you want to withdraw from the bank
 
-\`c!çek <miktar || hepsi>\``))
+\`Zunbank <miktar || all>\``))
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
   //-----------------------------------------------------------------------------------------------------\\
  if(miktar === 'all' || args[0] === 'hepsi') {
@@ -26,12 +26,12 @@ db.add(`para_${message.author.id}`, bankapara)
 message.channel.send(new Discord.MessageEmbed()
 .setColor("GREEN")
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-.setDescription(`✅ Başarılı, bankadan ${bankapara} 💸 çektin!`))
+.setDescription(`✅ Successful, unbank ${bankapara} 💸 you've taken it!`))
 } else {
     if(isNaN(miktar)) return message.channel.send(new Discord.MessageEmbed()
 .setColor("RED")//== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-.setDescription(`🤔 Girdiğin miktar geçerli bir sayı değil !?`))  
+.setDescription(`🤔 The quantity you entered is not a valid number !?`))  
   }//== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 //-----------------------------------------------------------------------------------------------------\\
       if(miktar < 0 || miktar.startsWith('0')) return message.channel.send(new Discord.MessageEmbed()
