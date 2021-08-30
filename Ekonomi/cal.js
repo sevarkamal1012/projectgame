@@ -79,7 +79,7 @@ await db.set(`çalma_${message.author.id}`, Date.now());
 }
 exports.conf = {
   enabled: true,
-  aliases: [],
+  aliases: ["sl"],
 };
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 exports.help = {

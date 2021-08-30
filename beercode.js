@@ -121,7 +121,7 @@ client.on('guildDelete', guild => {
 });
 //=====================================================//
 client.on("message", message => {
-  if (message.content === prefix + "help") {
+  if (message.content === prefix + "heljp") {
     var embed = new Discord.MessageEmbed()
       .setColor("#ffff00")
       .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
@@ -303,30 +303,32 @@ msg.delete()
 });
 //================================================================================\\
 client.on("message", message => {
-if  (message.content === prefix + "helps") {
+if  (message.content === prefix + "help") {
 const embed = new Discord.MessageEmbed()
 .setThumbnail(client.user.avatarURL())
 .setColor("#ffff00")
 ///.setImage("https://media.discordapp.net/attachments/869140398830940170/874002806804189234/Zooba-Logo.webp")
 .setAuthor('Zooba Discord Bot - Games!')
 .setDescription(`
-**🤹‍♂️Everyone Commands** - [13]
+**🤹‍♂️Everyone Commands** - [14]
 🤹‍♂️︙bot - avatar - id - vote
 🤹‍♂️︙invite - support - server
 🤹‍♂️︙website
 🤹‍︙anime - animel - boy
 🤹‍︙girl - sad - smoking
 
-**💰Economy Commands** - [6]
+**💰Economy Commands** - [7]
 💰︙daily(d) - cash(c)
-💰︙send - work(w)
-💰︙shop(h) - steal
+💰︙send - work - bank
+💰︙steal(sl) - unbank
 
-**🎮Game Comamnds** - [8]
+
+**🎮Game Comamnds** - [9]
 🎮︙Coinflip(cf) - Slots(s)
 🎮︙Weapon(w) - Ring(r)
 🎮︙Zooba(zb) - Fish(f)
 🎮︙Zoo(z) - Robot(ro)
+🎮︙heart(h)
 
 **⚙️Moderation Commands** - [10]
 ⚙️︙lock - unlock - embed

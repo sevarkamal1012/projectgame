@@ -46,9 +46,9 @@ exports.run = async (client, message, args) => {
         }}
 exports.conf = {
   enabled: true,
-  aliases: ["h"],
+  aliases: [],
 };
 
 exports.help = {
-  name: 'shop',
+  name: 'shobp',
 };//== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
