@@ -52,7 +52,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
         var text2 = `**<@${message.author.id}> CoinFlip <a:emoji_53:869535433137221653> Choice Own Or Lost**`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
-              msg.edit(`**<@${message.author.id}>\`\`\`YOU LOST...\`\`\`   Coin Flip Spent  💴${kaybettin}\n The coin spins and you lost it all...Z!**`);
+              msg.edit(`**🔴<@${message.author.id}>\`\`\`YOU LOST...\`\`\`   Coin Flip Spent  💴${kaybettin}\n The coin spins and you lost it all...Z!**`);
             }, 3000);
           });
       await db.set(`bahisoynama_${message.author.id}`, Date.now());   
@@ -63,7 +63,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
         var text2 = `**<@${message.author.id}> CoinFlip <a:emoji_53:869535433137221653> Choice Own Or Lost**`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
-              msg.edit(`**<@${message.author.id}>\`\`\`YOU WIN...\`\`\`   Coin Flip Spent  💴${kazandın}+ \n Amounting winning**`);
+              msg.edit(`**🟢<@${message.author.id}>\`\`\`YOU WIN...\`\`\`   Coin Flip Spent  💴${kazandın}+ \n Amounting winning**`);
             }, 3000);
           });
     await db.set(`bahisoynama_${message.author.id}`, Date.now());   

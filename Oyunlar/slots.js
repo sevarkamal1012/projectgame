@@ -55,9 +55,9 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
             setTimeout(() => {
               msg.edit(`**
 \`\`\`__SLOTS__\`\`\`
-${slots[result1]}${slots[result2]}${slots[result3]} ${message.author.username}💵 ${kazandin}
-\`\`|        |\`\`
-**`,true);
+${slots[result1]}${slots[result2]}${slots[result3]} ${message.author.username} bet💶 ${kazandin}
+\`\`|        |\`\` 
+was added to your balance  💶${kazandin}+ x3\`\`\`You win...\`\`\`  🟢 **`,true);
             }, 3500);
           });
 
@@ -67,14 +67,15 @@ ${slots[result1]}${slots[result2]}${slots[result3]} ${message.author.username}�
     var text3 = `**
 \`\`\`__SLOTS__\`\`\`
 <a:emoji_55:869537420327157790><a:emoji_55:869537420327157790><a:emoji_55:869537420327157790> ${message.author.username}
-\`\`|       |\`\`
+\`\`|        |\`\`
 **`;
           message.channel.send(text3).then(msg => {
             setTimeout(() => {
               msg.edit(`**
 \`\`\`__SLOTS__\`\`\`
-${slots[result1]}${slots[result2]}${slots[result3]} ${message.author.username}bet💶 ${miktar}-
-\`\`|        |\`\` /n and won nothing...\`\`\`You lost...\`\`\` 🔴  **`, true);
+${slots[result1]}${slots[result2]}${slots[result3]} ${message.author.username} bet💶 ${miktar}-
+\`\`|        |\`\`
+and won nothing...\`\`\`You lost...\`\`\` 🔴  **`, true);
             }, 3500);
           });
   db.add(`para_${message.author.id}`, -miktar)
