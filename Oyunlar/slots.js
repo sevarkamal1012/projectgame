@@ -67,10 +67,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
 |                  |`;
           message.channel.send(text3).then(msg => {
             setTimeout(() => {
-              msg.edit(`**
-    __SLOTS__  
-|${slots[result1]}${slots[result2]}${slots[result3]}|${message.author.username}💵 ${miktar}-
-|                  |**`, true);
+              msg.edit(``__SLOTS__`**\n  ${slots[result1]}{slots[result2]}${slots[result3]} **${message.author.username}** bet <:Para:866091625922035762> ${miktar}, true);
             }, 3500);
           });
   db.add(`para_${message.author.id}`, -miktar)
