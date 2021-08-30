@@ -10,14 +10,14 @@ module.exports.run = async (client, message, args) => {
 .setColor("RED")
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
 .setDescription(`⛔ You must enter the amount of money to be deposited in the bank!
-\`!deposit <amount || all>\``))
+\`Zbank <amount || all>\``))
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 //-----------------------------------------------------------------------------------------------------\\
  if(miktar === 'all' || miktar === 'all') {
    if(param === 0) return message.channel.send(new Discord.MessageEmbed()
 .setColor("RED")//== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-.setDescription("⛔ You have no money to deposit in the bank!"))
+.setDescription("⛔ You have no money to Bank in the bank!"))
 db.add(`bankapara_${message.author.id}`, param)
 db.add(`para_${message.author.id}`, -param)   
 message.channel.send(new Discord.MessageEmbed()
