@@ -25,9 +25,8 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
 .setDescription(`🤔 The amount you entered is not a valid number !?`))
  let kazandin = miktar*3   
-  let slots = ["<:emoji_47:869537744836255764>","<:emoji_46:869537716679888907>","<:emoji_46:869537716679888907>"];
-  //
-//== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
+  let slots = ["🍇","🍉","🍎","🍒"];
+//== BEERCODE (h"ttps://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
   let result1 = Math.floor((Math.random() * slots.length));
   let result2 = Math.floor((Math.random() * slots.length));
   let result3 = Math.floor((Math.random() * slots.length));
@@ -46,17 +45,16 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
 //===BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\ 
   if (slots[result1] === slots[result2] && slots[result2] === slots[result3] ) {
     var text2 = `**
-    ___SLOTS___  
-|<a:emoji_55:869537420327157790><a:emoji_55:869537420327157790><a:emoji_55:869537420327157790>|${message.author.username}
+    __SLOTS__  
+<a:emoji_55:869537420327157790><a:emoji_55:869537420327157790><a:emoji_55:869537420327157790> ${message.author.username}
 |                  |
-|                  |**`;
+**`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
-              msg.edit(`**``
-    ___SLOTS___  
+              msg.edit(`**
+    __SLOTS___ 
 |${slots[result1]}${slots[result2]}${slots[result3]}${message.author.username}💵 ${kazandin}+
-|                  |
-|                  |**```,true);
+|                  |**`,true);
             }, 3500);
           });
 
@@ -64,17 +62,15 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
   } else {
     var text3 = `
-    ___SLOTS___  
-|<a:emoji_55:869537420327157790><a:emoji_55:869537420327157790><a:emoji_55:869537420327157790>|${message.author.username}
-|                  |
+    __SLOTS__ 
+<a:emoji_55:869537420327157790><a:emoji_55:869537420327157790><a:emoji_55:869537420327157790> ${message.author.username}
 |                  |`;
           message.channel.send(text3).then(msg => {
             setTimeout(() => {
-              msg.edit(`**"``
-    ___SLOTS___  
+              msg.edit(`**
+    __SLOTS__  
 |${slots[result1]}${slots[result2]}${slots[result3]}|${message.author.username}💵 ${miktar}-
-|                  |
-|                  |**``"`, true);
+|                  |**`, true);
             }, 3500);
           });
   db.add(`para_${message.author.id}`, -miktar)
