@@ -54,9 +54,9 @@ db.add(`bankapara_${message.author.id}`, miktar)
 }
 exports.conf = {
   enabled: true,
-  aliases: ["dep","deposit","de"],
+  aliases: [],
 };
 
 exports.help = {
-  name: 'deposit',
+  name: 'bank',
 };//== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\\

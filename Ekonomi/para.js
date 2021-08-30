@@ -16,12 +16,17 @@ exports.run = async (client, message, args) => {
   console.log(toplam.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ')) 
 //total: ${toplam.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ')}
   let balanceEmbed = new Discord.MessageEmbed()
-  message.channel.send(`**<:para:873291428531404800> | ${message.author.username},you currently have __${para.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1,')}__ cowoncy!**`);
+    .setAuthor(user.tag, user.avatarURL({dynamic: true}))
+    .setDescription(`**__Zooba Cash \💰__**\n**💵 | Balance : ${para.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1,')}\n🏧 | Bank: ${banka.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1,')} \n📊 | total: ${toplam.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1,')}**`)
+    .setColor("RANDOM")
+    .setThumbnail('https://i.pinimg.com/originals/a6/ff/a5/a6ffa54c9b06f7030aecd93f011dcb60.gif')
+    .setFooter('💰 Balance Info!');
+  message.channel.send(balanceEmbed);
 }
 
 exports.conf = {
   enabled: true,
-  aliases: ["cash","money","creditz","c"],
+  aliases: ["cash", "money", 'credit', 'c'],
 };
 exports.help = {
   name: 'balance',

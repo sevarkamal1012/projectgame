@@ -222,6 +222,10 @@ var embed = new Discord.MessageEmbed()
 
 **💰︙steal** - || steal [@user] -amounts||
 
+**💰 ︙ bank** - || bank amounts ||
+
+**💰 ︙ unbank** - || unbank amounts ||
+
 
 [Zooba Invite](https://discord.com/api/oauth2/authorize?client_id=842355185912512582&permissions=8&scope=bot)
 `)
