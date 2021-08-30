@@ -1,8 +1,6 @@
 const Discord = require('discord.js');
 var ayarlar = require("../ayarlar.json")
 const db = require('quick.db')
-let all = false;
-let max = 50000;
 exports.run = function(client, message,  args) {
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
   let miktar = args[0]
@@ -17,42 +15,6 @@ if(miktar > 50000) return message.channel.send(new Discord.MessageEmbed()
       .setColor("GREEN")
       .setDescription(`**slots**You Can't More Than💰 50,000`))
   ////////
-  let mrhama = db.findOne({
-  Username:message.author.username,
-  User:message.author.id
-  
-}, (err,sl) => {
-  if(err) console.log(err)
-  if(!sl){
-    db.create({
-      Username:message.author.username,
-      User:message.author.id,
-      Guild:message.guild.id,
-      Guildname:message.guild.name,
-      Coins: 100
-    })
-  } else{
-  if(args[0] === "all"){
-      all = true
-    }else if(parseInt(args[0])){
-      money = parseInt(args[0])
-    } 
-    
-
-      
-          if(all && sl.Coins > 50000  ){
-      money = 50000
-    }
-      if(all && sl.Coins < max)
-      money = sl;
-      if(all && sl.Coins== 0) return message.channel.send("**You Dont Have Money**")
-    
-    if(!all&& isNaN(args[0]) || parseInt(args[0]) > 50000) return message.channel.send("You Can't More Than 50,000")
-    
-    if(sl.Coins===0&&!all){
-      message.channel.send("**You Dont Have Money**")
-      return;
-    }
     
   /////////////
 if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
@@ -126,4 +88,4 @@ exports.conf = {
 
 exports.help = {
   name: 'slots',
-};
+  };
