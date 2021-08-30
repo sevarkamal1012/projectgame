@@ -17,7 +17,7 @@ exports.run = async (client, message, args) => {
 //total: ${toplam.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ')}
   let balanceEmbed = new Discord.MessageEmbed()
     .setAuthor(user.tag, user.avatarURL({dynamic: true}))
-    .setDescription(`**__Zooba Cash \💰__**\n**💵 | Balance : ${para.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1,')}\n🏧 | Bank: ${banka.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1,')}**`)
+    .setDescription(`**__Zooba Cash \💰__**\n**💵 | Balance : ${para.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1,')}\n➖➖➖➖➖➖➖➖\n🎯 | 🏧 | Bank: ${banka.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1,')}**`)
     .setColor("RANDOM")
     .setThumbnail('https://i.pinimg.com/originals/a6/ff/a5/a6ffa54c9b06f7030aecd93f011dcb60.gif')
     .setFooter('💰 Balance Info!');
