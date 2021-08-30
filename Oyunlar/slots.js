@@ -47,16 +47,17 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
 //===BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\ 
   if (slots[result1] === slots[result2] && slots[result2] === slots[result3] ) {
     var text2 = `**
-    __SLOTS__  
+    __ SLOTS __
 <a:emoji_55:869537420327157790><a:emoji_55:869537420327157790><a:emoji_55:869537420327157790> ${message.author.username}
-|                  |
+|            |
 **`;
           message.channel.send(text2).then(msg => {
             setTimeout(() => {
               msg.edit(`**
-    __SLOTS___ 
-|${slots[result1]}${slots[result2]}${slots[result3]}${message.author.username}💵 ${kazandin}+
-|                  |**`,true);
+|➖➖➖➖➖|
+|➖${slots[result1]}${slots[result2]}${slots[result3]}➖| ${message.author.username}💵 ${kazandin}
+|➖➖➖➖➖|
+**`,true);
             }, 3500);
           });
 
@@ -64,15 +65,15 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
   } else {
     var text3 = `
-    __SLOTS__ 
+    __ SLOTS __ 
 <a:emoji_55:869537420327157790><a:emoji_55:869537420327157790><a:emoji_55:869537420327157790> ${message.author.username}
-|                  |`;
+|            |`;
           message.channel.send(text3).then(msg => {
             setTimeout(() => {
               msg.edit(`**
-    __SLOTS__  
-|${slots[result1]}${slots[result2]}${slots[result3]}|${message.author.username}💵 ${miktar}-
-|                  |**`, true);
+|----------|
+|-${slots[result1]}${slots[result2]}${slots[result3]}-| ${message.author.username}💵 ${miktar}-
+|----------|**`, true);
             }, 3500);
           });
   db.add(`para_${message.author.id}`, -miktar)
