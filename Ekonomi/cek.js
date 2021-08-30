@@ -41,7 +41,7 @@ message.channel.send(new Discord.MessageEmbed()
    if (miktar > bankapara) return message.channel.send(new Discord.MessageEmbed()
 .setColor("RED")
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-.setDescription(`⛔ Şuan bankanda sadece ${bankapara} 💸 var`))
+.setDescription(`⛔ Right now, it's just in your bank ${bankapara} 💸 var`))
   
 //-----------------------------------------------------------------------------------------------------\\
 if(args[0] === 'all' || args[0] === 'hepsi') {
@@ -50,7 +50,7 @@ if(args[0] === 'all' || args[0] === 'hepsi') {
 message.channel.send(new Discord.MessageEmbed()
 .setColor("GREEN")
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-.setDescription(`<:yes:775339203105259540> Başarılı, bankadan ${miktar} 💸 çektin!`))
+.setDescription(`☑️ Successful, unbank ${miktar} 💸 you've taken it!`))
 db.add(`para_${message.author.id}`, miktar)
 db.add(`bankapara_${message.author.id}`, -miktar) 
   }
