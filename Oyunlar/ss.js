@@ -78,6 +78,15 @@ ${slots[result1]}${slots[result2]}${slots[result3]} ${message.author.username} b
 and won nothing...\`\`\`You lost...\`\`\` 🔴  **`, true);
             }, 3500);
           });
+    message.channel.send(text3).then(msg => {
+            setTimeout(() => {
+              msg.edit(`**
+\`\`\`__SLOTS__\`\`\`
+${slots[result1]}${slots[result2]}${slots[result3]} ${message.author.username} bet💶 ${miktar}-
+\`\`|        |\`\`
+and won nothing...\`\`\`You lost...\`\`\` 🔴  **`, true);
+            }, 3500);
+          });
   db.add(`para_${message.author.id}`, -miktar)
   }
 }
@@ -85,7 +94,7 @@ and won nothing...\`\`\`You lost...\`\`\` 🔴  **`, true);
 exports.conf = {
   enabled: true,
   guildOnly: true,
-  aliases: ["slot","s","slotmachine"],
+  aliases: ["slot","ss","slotmachine"],
   permLevel: 2
 };
 
