@@ -10,7 +10,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.login(process.env.TOKEN)
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
-const prefix = "Z!";
+const prefix = "Z";
 //=======================================//
 
 //=== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
