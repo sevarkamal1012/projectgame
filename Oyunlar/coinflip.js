@@ -42,7 +42,9 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
                                         .setDescription(`In your wallet to place a bet ${para ? "just " + para + ' 💸 there is!' : 'you have no money!'}`))
         const result = [
           "LOOSELOOSE",
-          "WINWIN"
+          "LOOSELOOSE",
+          "WINWIN",
+          "LOOSELOOSE"
         ] 
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
         let awnser = result[Math.floor(Math.random() * result.length)]
