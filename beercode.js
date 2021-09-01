@@ -325,10 +325,7 @@ const embed = new Discord.MessageEmbed()
 
 **🎮Game Comamnds** - [9]
 🎮︙Coinflip(cf) - Slots(s)
-🎮︙Weapon(w) - Ring(r)
-🎮︙Zooba(zb) - Fish(f)
-🎮︙Zoo(z) - Robot(ro)
-🎮︙heart(h)
+🎮︙Fish(f)
 
 **⚙️Moderation Commands** - [10]
 ⚙️︙lock - unlock - embed
