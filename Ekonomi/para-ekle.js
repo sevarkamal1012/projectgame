@@ -43,6 +43,6 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'unblack-list',
+  name: 'empo',
 };//== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
  
