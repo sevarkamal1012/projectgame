@@ -42,7 +42,6 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
                                         .setDescription(`In your wallet to place a bet ${para ? "just " + para + ' 💸 there is!' : 'you have no money!'}`))
         const result = [
           "LOOSELOOSE",
-          "LOOSELOOSE",
           "WINWIN",
           "LOOSELOOSE"
         ] 

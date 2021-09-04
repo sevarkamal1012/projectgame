@@ -10,7 +10,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.login(process.env.TOKEN)
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
-const prefix = "Z";
+const prefix = "/";
 //=======================================//
 
 //=== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
@@ -21,7 +21,7 @@ const log = message => {
 require('./util/eventLoader.js')(client);
 //===========================================//
 client.on("message", message => {
-if  (message.content === prefix + "vote") {
+if  (message.content === prefix + ".vote") {
 const embed = new Discord.MessageEmbed()
 .setColor("#ffff00")
 .setImage(`https://media.discordapp.net/attachments/869689813996023899/874614716419424336/maxresdefault_2.jpg`)
@@ -34,7 +34,7 @@ const embed = new Discord.MessageEmbed()
       });
 //===========================================//
 client.on("message", message => {
-if  (message.content === prefix + "website") {
+if  (message.content === prefix + ".website") {
 const embed = new Discord.MessageEmbed()
 .setColor("#ffff00")
 .setImage(`https://media.discordapp.net/attachments/869689813996023899/875127127685611560/maxresdefault_1.jpg`)
@@ -47,7 +47,7 @@ const embed = new Discord.MessageEmbed()
       });
 //====================================================================================\\
 client.on('ready', async () => {
- client.user.setActivity(`Update New`, { type:'PLAYING' })
+ client.user.setActivity(`/help`, { type:'PLAYING' })
 });
 //===============================================================================\\
 client.on("message", emprator => {
@@ -59,9 +59,9 @@ if  (message.content === prefix + "support") {
 const embed = new Discord.MessageEmbed()
 .setColor("#ffff00")
 .setImage(`https://media.discordapp.net/attachments/869689813996023899/874616507445960734/maxresdefault_3.jpg`)
-.setAuthor('Zooba Discord Bot - Games!')
-.setDescription("`Zooba Support Server`")
-.addField("`Zooba Link`","**https://discord.gg/5NtkQjbSgE**")
+.setAuthor('Rock Discord Bot - Games!')
+.setDescription("`Rock Support Server`")
+.addField("`Rock Link`","**https://discord.gg/5NtkQjbSgE**")
        message.channel.send(embed)
 
        } 
@@ -72,9 +72,9 @@ if  (message.content === prefix + "invite") {
 const embed = new Discord.MessageEmbed()
 .setColor("#ffff00")
 .setImage(`https://media.discordapp.net/attachments/869140398830940170/874009229319634954/maxresdefault_1.jpg`)
-.setAuthor('Zooba Discord Bot - Games!')
-.setDescription("`Zooba invite Your Server`")
-.addField("`Zooba Link`","**https://discord.com/api/oauth2/authorize?client_id=842355185912512582&permissions=8&scope=bot**")
+.setAuthor('Rock Discord Bot - Games!')
+.setDescription("`Rock invite Your Server`")
+.addField("`Zooba Link`","**https://discord.com/api/oauth2/authorize?client_id=782911020527517727&permissions=8&scope=bot**")
        message.channel.send(embed)
 
        } 
@@ -311,11 +311,8 @@ const embed = new Discord.MessageEmbed()
 .setAuthor('Zooba Discord Bot - Games!')
 .setDescription(`
 **🤹‍♂️Everyone Commands** - [14]
-🤹‍♂️︙bot - avatar - id - vote
+🤹‍♂️︙bot - avatar - id
 🤹‍♂️︙invite - support - server
-🤹‍♂️︙website
-🤹‍︙anime - animel - boy
-🤹‍︙girl - sad - smoking
 
 **💰Economy Commands** - [7]
 💰︙daily(d) - cash(c)
@@ -334,7 +331,7 @@ const embed = new Discord.MessageEmbed()
 ⚙️︙roleinfo
 
 📎┇Link
-[Support Bot](https://discord.gg/5NtkQjbSgE) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=842355185912512582&permissions=8&scope=bot) - [Website](https://bit.ly/zooba-web)
+[Support Bot](https://discord.gg/5NtkQjbSgE) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=782911020527517727&permissions=8&scope=bot) - [Website](https://bit.ly/zooba-web)
 `)
               message.channel.send(embed)
 
@@ -369,7 +366,7 @@ const embed = new Discord.MessageEmbed()
       });
 //===============================================================================\\
 client.on("message", message => {
-if  (message.content === "Zgame") {
+if  (message.content === "/game") {
 const embed = new Discord.MessageEmbed()
 .setThumbnail(client.user.avatarURL())
 .setColor("BLACK")
