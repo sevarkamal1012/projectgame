@@ -10,7 +10,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.login(process.env.TOKEN)
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
-const prefix = "/";
+const prefix = "S";
 //=======================================//
 
 //=== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
@@ -47,7 +47,7 @@ const embed = new Discord.MessageEmbed()
       });
 //====================================================================================\\
 client.on('ready', async () => {
- client.user.setActivity(`/help`, { type:'PLAYING' })
+ client.user.setActivity(`Shelp`, { type:'PLAYING' })
 });
 //===============================================================================\\
 client.on("message", emprator => {
@@ -59,9 +59,9 @@ if  (message.content === prefix + "support") {
 const embed = new Discord.MessageEmbed()
 .setColor("#ffff00")
 .setImage(`https://media.discordapp.net/attachments/869689813996023899/874616507445960734/maxresdefault_3.jpg`)
-.setAuthor('Rock Discord Bot - Games!')
+.setAuthor('Skell Discord Bot - Games!')
 .setDescription("`Rock Support Server`")
-.addField("`Rock Link`","**https://discord.gg/5NtkQjbSgE**")
+.addField("`Skell Link`","**https://discord.gg/5NtkQjbSgE**")
        message.channel.send(embed)
 
        } 
@@ -72,9 +72,9 @@ if  (message.content === prefix + "invite") {
 const embed = new Discord.MessageEmbed()
 .setColor("#ffff00")
 .setImage(`https://media.discordapp.net/attachments/869140398830940170/874009229319634954/maxresdefault_1.jpg`)
-.setAuthor('Rock Discord Bot - Games!')
+.setAuthor('Skell Discord Bot - Games!')
 .setDescription("`Rock invite Your Server`")
-.addField("`Zooba Link`","**https://discord.com/api/oauth2/authorize?client_id=782911020527517727&permissions=8&scope=bot**")
+.addField("`Skell Link`","**https://discord.com/api/oauth2/authorize?client_id=782911020527517727&permissions=8&scope=bot**")
        message.channel.send(embed)
 
        } 
@@ -308,7 +308,7 @@ const embed = new Discord.MessageEmbed()
 .setThumbnail(client.user.avatarURL())
 .setColor("#ffff00")
 ///.setImage("https://media.discordapp.net/attachments/869140398830940170/874002806804189234/Zooba-Logo.webp")
-.setAuthor('Zooba Discord Bot - Games!')
+.setAuthor('Skell Discord Bot - Games!')
 .setDescription(`
 **🤹‍♂️Everyone Commands** - [14]
 🤹‍♂️︙bot - avatar - id
@@ -632,7 +632,7 @@ client.on("message", async message => {
 client.on("guildCreate", guild => {
   let embed = new discord.MessageEmbed()
     .setColor("BLACK")
-    .setDescription(`Thanks for adding Zooba, I wish you luck!`);
+    .setDescription(`Thanks for adding Skell, I wish you luck!`);
 
   guild.owner.send(embed);
 });
