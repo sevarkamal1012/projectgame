@@ -43,6 +43,6 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'empo',
+  name: 'admin',
 };//== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
  
