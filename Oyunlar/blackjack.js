@@ -18,8 +18,8 @@ if(miktar < 100) return message.channel.send(new Discord.MessageEmbed()
 .setColor("RED")
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
 .setDescription(`🤔 The amount you entered is not a valid number !?`))
- let kazandin = miktar*3     
-  let slots = ["🍓","🍎","🍍","🍌","🍒","🍇","🍍","🍇","🍇","🍍","🍎","🍎","🍎","🍓","🍓",];
+ let kazandin = miktar*2    
+  let slots = ["🔴","🟢","🔵"];
   //
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
   let result1 = Math.floor((Math.random() * slots.length));
@@ -39,10 +39,9 @@ if(miktar < 100) return message.channel.send(new Discord.MessageEmbed()
     let embed = new Discord.MessageEmbed()
        .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
        .setTitle('🎰 Slot Machine 🎰')
+    .setIamge("https://media.discordapp.net/attachments/869689813996023899/884430164983951410/screen-1.jpg")
  .setDescription(`**${kazandin} 💸 you won!**
-${slots[ust1]} | ${slots[ust2]} | ${slots[ust3]} |
-${slots[result1]} | ${slots[result2]} | ${slots[result3]} |  ⬅
-${slots[alt1]} `, true)
+${slots[result1]} | ${slots[result2]} | ${slots[result3]}`, true)
        .setColor("GREEN")
    message.channel.send(embed)
      db.add(`para_${message.author.id}`, kazandin)
@@ -50,11 +49,10 @@ ${slots[alt1]} `, true)
   } else {
     let embed2 = new Discord.MessageEmbed()
     .setAuthor(message.author.tag , message.author.avatarURL({dynamic: true}))
-       .setTitle('🎰 Slot Machine 🎰')   
+       .setTitle('🎰 Slot Machine 🎰') 
+    .setImage("https://media.discordapp.net/attachments/869689813996023899/884430164983951410/screen-1.jpg")
  .setDescription(`**${miktar} 💸 you lost!**
-${slots[ust1]} | ${slots[ust2]} | ${slots[ust3]} |
-${slots[result1]} | ${slots[result2]} | ${slots[result3]} | ⬅
-${slots[alt1]} | ${slots[alt2]} | ${slots[alt3]} |`, true)
+${slots[result1]} | ${slots[result2]} | ${slots[result3]} | ⬅`, true)
        .setColor("RED")
    message.channel.send(embed2)
   db.add(`para_${message.author.id}`, -miktar)
@@ -64,10 +62,10 @@ ${slots[alt1]} | ${slots[alt2]} | ${slots[alt3]} |`, true)
 exports.conf = {
   enabled: true,
   guildOnly: true,
-  aliases: ["black jack"],
+  aliases: ["roulette"],
   permLevel: 2
 };
 
 exports.help = {
-  name: 'bj',
+  name: 'rl',
 };
