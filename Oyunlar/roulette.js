@@ -8,12 +8,12 @@ exports.run = function(client, message,  args) {
   if(!miktar) return message.channel.send(new Discord.MessageEmbed()
       .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
       .setColor("GREEN")
-      .setDescription(`**slots** you have to enter an amount to play!`))
+      .setDescription(`**roulette** you have to enter an amount to play!`))
   //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 if(miktar < 100) return message.channel.send(new Discord.MessageEmbed()
       .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
       .setColor("GREEN")
-      .setDescription(`**slots** at least 100 to play 💸 you can deposit!`))
+      .setDescription(`**roulette** at least 100 to play 💸 you can deposit!`))
   if(isNaN(miktar) || miktar < 0) return message.channel.send(new Discord.MessageEmbed()
 .setColor("RED")
 .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
@@ -38,10 +38,12 @@ if(miktar < 100) return message.channel.send(new Discord.MessageEmbed()
   if (slots[result1] === slots[result2] && slots[result2] === slots[result3] ) {
     let embed = new Discord.MessageEmbed()
        //.setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-       //.setTitle('🎰 Slot Machine 🎰')
-    .setIamge("https://media.discordapp.net/attachments/869689813996023899/884430164983951410/screen-1.jpg")
- .setDescription(`**${kazandin} 💸 you won!**
-${slots[result1]} | ${slots[result2]} | ${slots[result3]}`, true)
+      .setFooter(`${slots[result1]} | ${slots[result2]} | ${slots[result3]}`)
+    .setImage("https://media.discordapp.net/attachments/869689813996023899/884430164983951410/screen-1.jpg")
+ .setDescription(`<@${message.author.id}>
+:white_check_mark:You Won Your Bet:
+You Color Was: ${slots[result1]}${slots[result2]}${slots[result3]}
+You Now Have: ${kazandin}`,true)
        .setColor("GREEN")
    message.channel.send(embed)
      db.add(`para_${message.author.id}`, kazandin)
@@ -54,7 +56,7 @@ ${slots[result1]} | ${slots[result2]} | ${slots[result3]}`, true)
     .setImage("https://media.discordapp.net/attachments/869689813996023899/884430164983951410/screen-1.jpg")
  .setDescription(`<@${message.author.id}>
  :x:You Lost Your Bet!
-You Color Was: ${slots[result1]} | ${slots[result2]} | ${slots[result3]}
+You Color Was: ${slots[result1]}${slots[result2]}${slots[result3]}
 You Now Have: ${miktar}`,true)
        .setColor("RED")
    message.channel.send(embed2)

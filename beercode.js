@@ -308,7 +308,7 @@ const embed = new Discord.MessageEmbed()
 .setThumbnail(client.user.avatarURL())
 .setColor("#ffff00")
 ///.setImage("https://media.discordapp.net/attachments/869140398830940170/874002806804189234/Zooba-Logo.webp")
-.setAuthor('Skell Discord Bot - Games!')
+.setAuthor('Zooba Discord Bot - Games!')
 .setDescription(`
 **🤹‍♂️Everyone Commands** - [14]
 🤹‍♂️︙bot - avatar - id
@@ -322,7 +322,7 @@ const embed = new Discord.MessageEmbed()
 
 **🎮Game Comamnds** - [9]
 🎮︙Coinflip(cf) - Slots(s)
-🎮︙Fish(f)
+🎮︙Fish(f) - Roulette(rl)
 
 **⚙️Moderation Commands** - [10]
 ⚙️︙lock - unlock - embed
