@@ -37,8 +37,8 @@ if(miktar < 100) return message.channel.send(new Discord.MessageEmbed()
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\ 
   if (slots[result1] === slots[result2] && slots[result2] === slots[result3] ) {
     let embed = new Discord.MessageEmbed()
-       .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
-       .setTitle('🎰 Slot Machine 🎰')
+       //.setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
+       //.setTitle('🎰 Slot Machine 🎰')
     .setIamge("https://media.discordapp.net/attachments/869689813996023899/884430164983951410/screen-1.jpg")
  .setDescription(`**${kazandin} 💸 you won!**
 ${slots[result1]} | ${slots[result2]} | ${slots[result3]}`, true)
@@ -48,11 +48,14 @@ ${slots[result1]} | ${slots[result2]} | ${slots[result3]}`, true)
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
   } else {
     let embed2 = new Discord.MessageEmbed()
-    .setAuthor(message.author.tag , message.author.avatarURL({dynamic: true}))
-       .setTitle('🎰 Slot Machine 🎰') 
+    //.setAuthor(message.author.tag , message.author.avatarURL({dynamic: true}))
+       //.setTitle('🎰 Slot Machine 🎰') 
+.setFooter(`${slots[result1]} | ${slots[result2]} | ${slots[result3]}`)
     .setImage("https://media.discordapp.net/attachments/869689813996023899/884430164983951410/screen-1.jpg")
- .setDescription(`**${miktar} 💸 you lost!**
-${slots[result1]} | ${slots[result2]} | ${slots[result3]} | ⬅`, true)
+ .setDescription(`<@${message.author.id}>
+ :x:You Lost Your Bet!
+You Color Was: ${slots[result1]} | ${slots[result2]} | ${slots[result3]}
+You Now Have: ${miktar}`,true)
        .setColor("RED")
    message.channel.send(embed2)
   db.add(`para_${message.author.id}`, -miktar)
