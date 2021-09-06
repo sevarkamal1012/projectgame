@@ -10,7 +10,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.login(process.env.TOKEN)
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
-const prefix = "S";
+const prefix = "Z";
 //=======================================//
 
 //=== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
@@ -21,7 +21,7 @@ const log = message => {
 require('./util/eventLoader.js')(client);
 //===========================================//
 client.on("message", message => {
-if  (message.content === prefix + ".vote") {
+if  (message.content === prefix + "vote") {
 const embed = new Discord.MessageEmbed()
 .setColor("#ffff00")
 .setImage(`https://media.discordapp.net/attachments/869689813996023899/874614716419424336/maxresdefault_2.jpg`)
@@ -34,7 +34,7 @@ const embed = new Discord.MessageEmbed()
       });
 //===========================================//
 client.on("message", message => {
-if  (message.content === prefix + ".website") {
+if  (message.content === prefix + "website") {
 const embed = new Discord.MessageEmbed()
 .setColor("#ffff00")
 .setImage(`https://media.discordapp.net/attachments/869689813996023899/875127127685611560/maxresdefault_1.jpg`)
