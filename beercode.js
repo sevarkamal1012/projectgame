@@ -74,7 +74,7 @@ const embed = new Discord.MessageEmbed()
 .setImage(`https://media.discordapp.net/attachments/869140398830940170/874009229319634954/maxresdefault_1.jpg`)
 .setAuthor('Zooba Discord Bot - Games!')
 .setDescription("`Zooba invite Your Server`")
-.addField("`Zooba Link`","**https://discord.com/api/oauth2/authorize?client_id=782911020527517727&permissions=8&scope=bot**")
+.addField("`Zooba Link`","**https://discord.com/api/oauth2/authorize?client_id=842355185912512582&permissions=8&scope=bot**")
        message.channel.send(embed)
 
        } 
@@ -331,7 +331,7 @@ const embed = new Discord.MessageEmbed()
 ⚙️︙roleinfo
 
 📎┇Link
-[Support Bot](https://discord.gg/5NtkQjbSgE) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=782911020527517727&permissions=8&scope=bot) - [Website](https://bit.ly/zooba-web)
+[Support Bot](https://discord.gg/5NtkQjbSgE) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=842355185912512582&permissions=8&scope=bot) - [Website](https://bit.ly/zooba-web)
 `)
               message.channel.send(embed)
 
