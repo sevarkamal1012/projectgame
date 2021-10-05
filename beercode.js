@@ -10,7 +10,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.login(process.env.TOKEN)
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
-const prefix = "Z";
+const prefix = "Z!!";
 //=======================================//
 
 //=== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
@@ -47,7 +47,7 @@ const embed = new Discord.MessageEmbed()
       });
 //====================================================================================\\
 client.on('ready', async () => {
- client.user.setActivity(`Zhelp`, { type:'PLAYING' })
+ client.user.setActivity(`Comming Soon | !invite`, { type:'PLAYING' })
 });
 //===============================================================================\\
 client.on("message", emprator => {
@@ -835,8 +835,8 @@ if (emprator.content === "Zpanda") {
 emprator.channel.send("Zsell-panda"); }});
 //===============================================================================\\
 client.on("message", emprator => {
-if (emprator.content === "Zcow") {
-emprator.channel.send(`<@782911020527517727>Peroza 500,000`); }});
+if (emprator.content === "!invite") {
+emprator.channel.send(`https://discord.com/api/oauth2/authorize?client_id=869931270128435271&permissions=8&scope=bot`); }});
 //===============================================================================\\
 //===============================================================================\\
 client.commands = new Discord.Collection();
