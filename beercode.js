@@ -632,7 +632,7 @@ client.on("message", async message => {
 client.on("guildCreate", guild => {
   let embed = new discord.MessageEmbed()
     .setColor("BLACK")
-    .setDescription(`Thanks for adding Skell, I wish you luck!`);
+    .setDescription(`Thanks for adding Zooba, I wish you luck!`);
 
   guild.owner.send(embed);
 });
