@@ -100,7 +100,7 @@ c.react('').then(() =>
 });
 //===============================================================================\\
 client.on('guildCreate', guild => {
-client.channels.cache.get("892069982077333577")
+client.channels.cache.get("897155444999598080")
   .send(`
 ✅ **Join Server**: ${client.guilds.cache.size}
 🔠 **Server Name**: ${guild.name}
@@ -110,7 +110,7 @@ client.channels.cache.get("892069982077333577")
 });
 ////////////////////////////////////////////
 client.on('guildDelete', guild => {
-  client.channels.cache.get("892069952717193318")
+  client.channels.cache.get("897155472493252690")
   .send(`
 <@782911020527517727>
 ❎ **Lift Server**: ${client.guilds.cache.size}
