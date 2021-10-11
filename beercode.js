@@ -10,7 +10,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.login(process.env.TOKEN)
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
-const prefix = "Z!!";
+const prefix = "Z";
 //=======================================//
 
 //=== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
@@ -47,7 +47,7 @@ const embed = new Discord.MessageEmbed()
       });
 //====================================================================================\\
 client.on('ready', async () => {
- client.user.setActivity(`Comming Soon | !invite`, { type:'PLAYING' })
+ client.user.setActivity(`Zhelp`, { type:'PLAYING' })
 });
 //===============================================================================\\
 client.on("message", emprator => {
@@ -61,7 +61,7 @@ const embed = new Discord.MessageEmbed()
 .setImage(`https://media.discordapp.net/attachments/869689813996023899/874616507445960734/maxresdefault_3.jpg`)
 .setAuthor('Zooba Discord Bot - Games!')
 .setDescription("`Zooab Support Server`")
-.addField("`Zooba Link`","**https://discord.gg/5NtkQjbSgE**")
+.addField("`Zooba Link`","**https://discord.gg/sB9v9PZHG8**")
        message.channel.send(embed)
 
        } 
@@ -74,7 +74,7 @@ const embed = new Discord.MessageEmbed()
 .setImage(`https://media.discordapp.net/attachments/869140398830940170/874009229319634954/maxresdefault_1.jpg`)
 .setAuthor('Zooba Discord Bot - Games!')
 .setDescription("`Zooba invite Your Server`")
-.addField("`Zooba Link`","**https://discord.com/api/oauth2/authorize?client_id=842355185912512582&permissions=8&scope=bot**")
+.addField("`Zooba Link`","**https://discord.com/api/oauth2/authorize?client_id=869931270128435271&permissions=8&scope=bot**")
        message.channel.send(embed)
 
        } 
