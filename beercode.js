@@ -100,7 +100,7 @@ c.react('').then(() =>
 });
 //===============================================================================\\
 client.on('guildCreate', guild => {
-client.channels.cache.get("897155444999598080")
+client.channels.cache.get("919453796214657074")
   .send(`
 ✅ **Join Server**: ${client.guilds.cache.size}
 🔠 **Server Name**: ${guild.name}
