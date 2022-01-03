@@ -47,7 +47,7 @@ const embed = new Discord.MessageEmbed()
       });
 //====================================================================================\\
 client.on('ready', async () => {
- client.user.setActivity(`Zhelp`, { type:'PLAYING' })
+ client.user.setActivity(`${prefix}help | ${client.guilds.cache.size} Server`, { type:'PLAYING' })
 });
 //===============================================================================\\
 client.on("message", emprator => {
