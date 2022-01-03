@@ -10,7 +10,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.login(process.env.TOKEN)
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
-const prefix = "R";
+const prefix = "Z";
 //=======================================//
 
 //=== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
@@ -47,7 +47,7 @@ const embed = new Discord.MessageEmbed()
       });
 //====================================================================================\\
 client.on('ready', async () => {
- client.user.setActivity(`Rhelp`, { type:'PLAYING' })
+ client.user.setActivity(`Zhelp`, { type:'PLAYING' })
 });
 //===============================================================================\\
 client.on("message", emprator => {
@@ -73,8 +73,8 @@ const embed = new Discord.MessageEmbed()
 .setColor("#ffff00")
 .setImage(`https://media.discordapp.net/attachments/869140398830940170/874009229319634954/maxresdefault_1.jpg`)
 .setAuthor('Zooba Discord Bot - Games!')
-.setDescription("`Ryo invite Your Server`")
-.addField("`Ryo Link`","**https://discord.com/api/oauth2/authorize?client_id=869931270128435271&permissions=8&scope=bot**")
+.setDescription("`Zooba invite Your Server`")
+.addField("`Zooba Link`","**https://discord.com/api/oauth2/authorize?client_id=869931270128435271&permissions=8&scope=bot**")
        message.channel.send(embed)
 
        } 
@@ -100,7 +100,7 @@ c.react('').then(() =>
 });
 //===============================================================================\\
 client.on('guildCreate', guild => {
-client.channels.cache.get("919453796214657074")
+client.channels.cache.get("897155444999598080")
   .send(`
 ✅ **Join Server**: ${client.guilds.cache.size}
 🔠 **Server Name**: ${guild.name}
