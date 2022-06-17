@@ -9,6 +9,7 @@ const ayarlar = require('./ayarlar.json');
 const Discord = require('discord.js');
 const client = new Discord.Client();
 client.login(process.env.TOKEN)
+client.login("OTMyNzMwMzUxOTM0MTExODE0.GdmcB6.CgAn7qNsQHbItUBShytfDEeQ4dNd0JQJyPbxwM");
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 const prefix = "Z";
 //=======================================//
