@@ -21,7 +21,7 @@ const log = message => {
 require('./util/eventLoader.js')(client);
 //===========================================//
 client.on("message", message => {
-if  (message.content === prefix + "vote") {
+if  (message.content === prefix + "voote") {
 const embed = new Discord.MessageEmbed()
 .setColor("#ffff00")
 .setImage(`https://media.discordapp.net/attachments/869689813996023899/874614716419424336/maxresdefault_2.jpg`)
@@ -34,7 +34,7 @@ const embed = new Discord.MessageEmbed()
       });
 //===========================================//
 client.on("message", message => {
-if  (message.content === prefix + "website") {
+if  (message.content === prefix + "wwebsite") {
 const embed = new Discord.MessageEmbed()
 .setColor("#ffff00")
 .setImage(`https://media.discordapp.net/attachments/869689813996023899/875127127685611560/maxresdefault_1.jpg`)
@@ -61,7 +61,7 @@ const embed = new Discord.MessageEmbed()
 .setImage(`https://media.discordapp.net/attachments/869689813996023899/874616507445960734/maxresdefault_3.jpg`)
 .setAuthor('Zooba Discord Bot - Games!')
 .setDescription("`Zooab Support Server`")
-.addField("`Zooba Link`","**https://discord.gg/sB9v9PZHG8**")
+.addField("`Zooba Link`","**https://discord.gg/74RudCcntv**")
        message.channel.send(embed)
 
        } 
@@ -83,7 +83,7 @@ const embed = new Discord.MessageEmbed()
 client.on('message', message => {
 if (message.guild) return;
 if (message.author.bot) return;
-var channel = client.channels.cache.get("874334894027833384");
+var channel = client.channels.cache.get("987811162928316476");
 if (!channel) return;
 var embed = new Discord.MessageEmbed()
 .setColor("#0000ff")
@@ -336,7 +336,7 @@ const embed = new Discord.MessageEmbed()
 ⚙️︙roleinfo
 
 📎┇Link
-[Support Bot](https://discord.gg/5NtkQjbSgE) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=869931270128435271&permissions=8&scope=bot) - [Website](https://bit.ly/zooba-web)
+[Support Bot](https://discord.gg/74RudCcntv) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=869931270128435271&permissions=8&scope=bot) - [Website](https://bit.ly/zooba-web)
 `)
               message.channel.send(embed)
 
