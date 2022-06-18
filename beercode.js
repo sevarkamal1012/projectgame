@@ -47,7 +47,7 @@ const embed = new Discord.MessageEmbed()
       });
 //====================================================================================\\
 client.on('ready', async () => {
- client.user.setActivity(`Zhelp`, { type:'PLAYING' })
+ client.user.setActivity(`${prefix}help | ${client.guilds.cache.size} Server`, { type:'PLAYING' })
 });
 //===============================================================================\\
 client.on("message", emprator => {
@@ -100,7 +100,7 @@ c.react('').then(() =>
 });
 //===============================================================================\\
 client.on('guildCreate', guild => {
-client.channels.cache.get("897155444999598080")
+client.channels.cache.get("927196659857891328")
   .send(`
 ✅ **Join Server**: ${client.guilds.cache.size}
 🔠 **Server Name**: ${guild.name}
@@ -110,7 +110,7 @@ client.channels.cache.get("897155444999598080")
 });
 ////////////////////////////////////////////
 client.on('guildDelete', guild => {
-  client.channels.cache.get("897155472493252690")
+  client.channels.cache.get("927196659857891328")
   .send(`
 <@782911020527517727>
 ❎ **Lift Server**: ${client.guilds.cache.size}
@@ -314,15 +314,20 @@ const embed = new Discord.MessageEmbed()
 🤹‍♂️︙bot - avatar - id
 🤹‍♂️︙invite - support - server
 
+✧･ﾟ: ✧･ﾟ: - :･ﾟ✧:･ﾟ
+
 **💰Economy Commands** - [7]
 💰︙daily(d) - cash(c)
 💰︙send - work - bank
 💰︙steal(sl) - unbank
 
+✧･ﾟ: ✧･ﾟ: - :･ﾟ✧:･ﾟ
 
 **🎮Game Comamnds** - [9]
 🎮︙Coinflip(cf) - Slots(s)
 🎮︙Fish(f) - Roulette(rl)
+
+✧･ﾟ: ✧･ﾟ: - :･ﾟ✧:･ﾟ
 
 **⚙️Moderation Commands** - [10]
 ⚙️︙lock - unlock - embed
@@ -331,7 +336,7 @@ const embed = new Discord.MessageEmbed()
 ⚙️︙roleinfo
 
 📎┇Link
-[Support Bot](https://discord.gg/5NtkQjbSgE) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=842355185912512582&permissions=8&scope=bot) - [Website](https://bit.ly/zooba-web)
+[Support Bot](https://discord.gg/5NtkQjbSgE) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=869931270128435271&permissions=8&scope=bot) - [Website](https://bit.ly/zooba-web)
 `)
               message.channel.send(embed)
 
