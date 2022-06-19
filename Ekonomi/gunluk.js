@@ -20,7 +20,7 @@ let times = await db.fetch(`worktime_${message.author.id}`)
                         .setDescription(`⏱ To get your daily reward${time.hours ? time.hours + " hour,": ""} ${time.minutes ? time.minutes + ' minute,' : ''} ${time.seconds ? time.seconds + ' you have to wait seconds!' : 're-enter the command!'}`))
   return
   }
-let moneys = rastgeleMiktar(7000,3000);
+let moneys = rastgeleMiktar(4000,1000);
       message.channel.send(new Discord.MessageEmbed()
                    .setColor("BLACK")
                    .setAuthor(message.author.tag, message.author.avatarURL({dynamic: true}))
