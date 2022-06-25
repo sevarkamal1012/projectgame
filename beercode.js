@@ -10,15 +10,15 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.login(process.env.TOKEN)
 //////
-ConnectionString connectionString = new ConnectionString("mongodb+srv://daerknoahss:<password>@cluster0.f2hyy.mongodb.net/?retryWrites=true&w=majority");
-MongoClientSettings settings = MongoClientSettings.builder()
-        .applyConnectionString(connectionString)
-        .serverApi(ServerApi.builder()
-            .version(ServerApiVersion.V1)
-            .build())
-        .build();
-MongoClient mongoClient = MongoClients.create(settings);
-MongoDatabase database = mongoClient.getDatabase("test");
+//ConnectionString  = new ConnectionString("mongodb+srv://daerknoahss:<password>@cluster0.f2hyy.mongodb.net/?retryWrites=true&w=majority");
+//MongoClientSettings settings = MongoClientSettings.builder()
+        //.applyConnectionString(connectionString)
+       // .serverApi(ServerApi.builder()
+            //.version(ServerApiVersion.V1)
+            //.build())
+        //.build();
+//MongoClient mongoClient = MongoClients.create(settings);
+//MongoDatabase database = mongoClient.getDatabase("test");
 //== BEERCODE (https://discord.gg/ew3dpTu4Z5) BEERCODE ==\\
 const prefix = "Z";
 //=======================================//
