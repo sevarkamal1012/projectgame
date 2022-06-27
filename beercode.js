@@ -47,7 +47,7 @@ const embed = new Discord.MessageEmbed()
       });
 //====================================================================================\\
 client.on('ready', async () => {
- client.user.setActivity(`${prefix}help`, { type:'PLAYING' })
+ client.user.setActivity(`Comming Soon`, { type:'PLAYING' })
 });
 //===============================================================================\\
 client.on("message", emprator => {
