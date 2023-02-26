@@ -121,7 +121,7 @@ client.on('guildDelete', guild => {
 });
 //=====================================================//
 client.on("message", message => {
-  if (message.content === prefix + "heljp") {
+  if (message.content === prefix + "help") {
     var embed = new Discord.MessageEmbed()
       .setColor("#ffff00")
       .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
