@@ -34,7 +34,7 @@ const embed = new Discord.MessageEmbed()
       });
 //===========================================//
 client.on("message", message => {
-if  (message.content === prefix + "wwebsite") {
+if  (message.content === prefix + "website") {
 const embed = new Discord.MessageEmbed()
 .setColor("#ffff00")
 .setImage(`https://media.discordapp.net/attachments/869689813996023899/875127127685611560/maxresdefault_1.jpg`)

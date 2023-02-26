@@ -48,7 +48,7 @@ if(miktar > para) return message.channel.send(new Discord.MessageEmbed()
   if (slots[result1] === slots[result2] && slots[result2] === slots[result3] ) {
     var text2 = `**
 \`\`\`__SLOTS__\`\`\`
-<a:slots7:421472581506564108><a:slots7:421472581506564108><a:slots7:421472581506564108> ${message.author.username}
+<a:slots7:1065285414467940392><a:slots7:1065285414467940392><a:slots7:1065285414467940392> ${message.author.username}
 \`\`|       |\`\`
 **`;
           message.channel.send(text2).then(msg => {
@@ -66,7 +66,7 @@ was added to your balance  💶${kazandin}+ x3\`\`\`You win...\`\`\`  🟢 **`,t
   } else {
     var text3 = `**
 \`\`\`__SLOTS__\`\`\`
-<a:slots7:421472581506564108><a:slots7:421472581506564108><a:slots7:421472581506564108> ${message.author.username}
+<a:slots7:1065285414467940392><a:slots7:1065285414467940392><a:slots7:1065285414467940392> ${message.author.username}
 \`\`|        |\`\`
 **`;
           message.channel.send(text3).then(msg => {
