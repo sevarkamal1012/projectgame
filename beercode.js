@@ -21,7 +21,7 @@ const log = message => {
 require('./util/eventLoader.js')(client);
 //===========================================//
 client.on("message", message => {
-if  (message.content === prefix + "voote") {
+if  (message.content === prefix + "vdhrj") {
 const embed = new Discord.MessageEmbed()
 .setColor("#ffff00")
 .setImage(`https://media.discordapp.net/attachments/869689813996023899/874614716419424336/maxresdefault_2.jpg`)
@@ -34,7 +34,7 @@ const embed = new Discord.MessageEmbed()
       });
 //===========================================//
 client.on("message", message => {
-if  (message.content === prefix + "website") {
+if  (message.content === prefix + "websitehri") {
 const embed = new Discord.MessageEmbed()
 .setColor("#ffff00")
 .setImage(`https://media.discordapp.net/attachments/869689813996023899/875127127685611560/maxresdefault_1.jpg`)
@@ -47,12 +47,12 @@ const embed = new Discord.MessageEmbed()
       });
 //====================================================================================\\
 client.on('ready', async () => {
- client.user.setActivity(`Z!help`, { type:'PLAYING' })
+ client.user.setActivity(`Zhelp`, { type:'PLAYING' })
 });
 //===============================================================================\\
 client.on("message", emprator => {
-if (emprator.content === "Zinvjjsite") {
-emprator.channel.send("https://discord.com/api/oauth2/authorize?client_id=842355185912512582&permissions=8&scope=bot"); }});
+if (emprator.content === "Zinvite64747") {
+emprator.channel.send("https://discord.com/oauth2/authorize?client_id=1002124699691659274&permissions=8&scope=applications.commands%20bot"); }});
 //===============================================================================\\
 client.on("message", message => {
 if  (message.content === prefix + "support") {
@@ -61,7 +61,7 @@ const embed = new Discord.MessageEmbed()
 .setImage(`https://media.discordapp.net/attachments/869689813996023899/874616507445960734/maxresdefault_3.jpg`)
 .setAuthor('Zooba Discord Bot - Games!')
 .setDescription("`Zooab Support Server`")
-.addField("`Zooba Link`","**https://discord.gg/74RudCcntv**")
+.addField("`Zooba Link`","**https://discord.gg/JkzDvUVGcg**")
        message.channel.send(embed)
 
        } 
@@ -74,7 +74,7 @@ const embed = new Discord.MessageEmbed()
 .setImage(`https://media.discordapp.net/attachments/869140398830940170/874009229319634954/maxresdefault_1.jpg`)
 .setAuthor('Zooba Discord Bot - Games!')
 .setDescription("`Zooba invite Your Server`")
-.addField("`Zooba Link`","**https://discord.com/api/oauth2/authorize?client_id=869931270128435271&permissions=8&scope=bot**")
+.addField("`Zooba Link`","**https://discord.com/oauth2/authorize?client_id=1002124699691659274&permissions=8&scope=applications.commands%20bot**")
        message.channel.send(embed)
 
        } 
@@ -303,7 +303,7 @@ msg.delete()
 });
 //================================================================================\\
 client.on("message", message => {
-if  (message.content === prefix + "help") {
+if  (message.content === prefix + "help6") {
 const embed = new Discord.MessageEmbed()
 .setThumbnail(client.user.avatarURL())
 .setColor("#ffff00")
