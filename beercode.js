@@ -311,7 +311,7 @@ const embed = new Discord.MessageEmbed()
 
 **🎮Game Comamnds** - [9]
 🎮︙Coinflip(cf) - Slots(s)
-🎮︙Fish(f) - Roulette(rl)
+🎮︙Fish(f) - Roulette(rl) Hunt(h)
 
 ✧･ﾟ: ✧･ﾟ: - :･ﾟ✧:･ﾟ
 
@@ -330,7 +330,7 @@ const embed = new Discord.MessageEmbed()
       });
 //================================================================================\\
 client.on("message", message => {
-if  (message.content === "Zsell-info") {
+if  (message.content === "Zsell-info6") {
 const embed = new Discord.MessageEmbed()
 .setColor("#ffff00")
 .setImage("https://media.discordapp.net/attachments/869689813996023899/874659295625625620/PicsArt_08-10-04.54.03.jpg")
@@ -369,7 +369,7 @@ const embed = new Discord.MessageEmbed()
 
 **Fish(f)** - Active Server Percent **%100**
 
-**roulette** - `)
+**roulette** - win **infinity** Precent **%30**`)
 
 
        message.channel.send(embed)
