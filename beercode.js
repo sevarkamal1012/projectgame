@@ -357,7 +357,7 @@ const embed = new Discord.MessageEmbed()
       });
 //===============================================================================\\
 client.on("message", message => {
-if  (message.content === "/game") {
+if  (message.content === prefix + "game-info") {
 const embed = new Discord.MessageEmbed()
 .setThumbnail(client.user.avatarURL())
 .setColor("BLACK")
@@ -369,15 +369,7 @@ const embed = new Discord.MessageEmbed()
 
 **Fish(f)** - Active Server Percent **%100**
 
-**Weapon(w)** - Win **1,000,000** Percent **%80**
-
-**Ring(r)** - Win **500,000** Percent **%70**
-
-**Neko(nk)** - Win **100,000** Percent **%50**
-
-**Zoo(z)** - Win **900,000** Percent **%75**
-
-**Robot(ro)** - Win **200,000** Percent **%60**`)
+**roulette** - `)
 
 
        message.channel.send(embed)
