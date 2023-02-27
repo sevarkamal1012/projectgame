@@ -121,7 +121,7 @@ client.on('guildDelete', guild => {
 });
 //=====================================================//
 client.on("message", message => {
-  if (message.content === prefix + "help") {
+  if (message.content === prefix + "command") {
     var embed = new Discord.MessageEmbed()
       .setColor("#ffff00")
       .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
@@ -141,7 +141,7 @@ client.on("message", message => {
 ,"`⚙️Click for a Moderation list`")
 .addField(`≪━─━─━─━─◈─━─━─━─━≫`
 ,`📎**Zooba Link**
-[Invite](https://discord.com/api/oauth2/authorize?client_id=842355185912512582&permissions=8&scope=bot) - [Support](https://discord.gg/5NtkQjbSgE) - [Website](https://bit.ly/zooba-web) - [Vote](https://top.gg/bot/842355185912512582/vote)`);
+[Invite](https://discord.com/oauth2/authorize?client_id=1002124699691659274&permissions=8&scope=bot%20applications.commands)`);
 message.channel.send(embed).then(msg => {
 msg.react(`🤹‍♂️`)
 msg.react(`💰`)
@@ -183,20 +183,6 @@ var embed = new Discord.MessageEmbed()
 **🤹‍♂️︙support** - ||Server Bot||
 
 **🤹‍♂️︙server** - ||server info||
-
-**🤹‍♂️︙website** - ||Website Bot||
-
-**🤹‍♂️︙anime** - ||Gif anime||
-
-**🤹‍♂️︙animel** - ||Gif Animel||
-
-**🤹‍♂️︙boy** - ||Gif Boy||
-
-**🤹‍♂️︙girl** - ||Gif Girl||
-
-**🤹‍♂️︙sad** - ||Gif Sad||
-
-**🤹‍♂️︙smoking** - ||Gif Smoking||
 
 [Zooba Invite](https://discord.com/api/oauth2/authorize?client_id=842355185912512582&permissions=8&scope=bot)
 `)
@@ -303,7 +289,7 @@ msg.delete()
 });
 //================================================================================\\
 client.on("message", message => {
-if  (message.content === prefix + "help6") {
+if  (message.content === prefix + "help") {
 const embed = new Discord.MessageEmbed()
 .setThumbnail(client.user.avatarURL())
 .setColor("#ffff00")
@@ -336,7 +322,7 @@ const embed = new Discord.MessageEmbed()
 ⚙️︙roleinfo
 
 📎┇Link
-[Support Bot](https://discord.gg/74RudCcntv) - [Invite Bot](https://discord.com/api/oauth2/authorize?client_id=869931270128435271&permissions=8&scope=bot) - [Website](https://bit.ly/zooba-web)
+[Invite Bot](https://discord.com/oauth2/authorize?client_id=1002124699691659274&permissions=8&scope=bot%20applications.commands)
 `)
               message.channel.send(embed)
 
@@ -724,7 +710,7 @@ client.on("message", message => {
 .setColor("#ffff00")
 .setDescription(`**
 ☀️Developer Bot
-<@782911020527517727>
+<@963498655468376117>
 
 ☀️Discord.JS
 v12.5.3
@@ -794,13 +780,8 @@ let help = new Discord.MessageEmbed()
       .setThumbnail(`https://media.discordapp.net/attachments/855773790184931339/868417068951801886/1615058769329.jpg`)
       .setAuthor(client.user.username, client.user.avatarURL())
       .setDescription(`
-➡️ | Zooba Prefix (Z)
-      
-➡️ | Zooba [Support](https://discord.gg/SyxSfp5dMQ)
-
-➡️ | Zooba [Invite](https://discord.com/api/oauth2/authorize?client_id=842355185912512582&permissions=27664&scope=bot)
-
-➡️ | Zooba [Website](https://bit.ly/zooba-web)`)
+➡️ | Zooba Prefix (Z)  
+➡️ | Zooba [Invite](https://discord.com/oauth2/authorize?client_id=1002124699691659274&permissions=8&scope=applications.commands%20bot)`)
 
     message.channel.send(help);
   }
@@ -841,7 +822,7 @@ emprator.channel.send("Zsell-panda"); }});
 //===============================================================================\\
 client.on("message", emprator => {
 if (emprator.content === "!invite") {
-emprator.channel.send(`https://discord.com/api/oauth2/authorize?client_id=869931270128435271&permissions=8&scope=bot`); }});
+emprator.channel.send(`https://discord.com/oauth2/authorize?client_id=1002124699691659274&permissions=8&scope=applications.commands%20bot`); }});
 //===============================================================================\\
 //===============================================================================\\
 client.commands = new Discord.Collection();
